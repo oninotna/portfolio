@@ -1,0 +1,88 @@
+.my-card {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    
+    transition: 1s;
+}
+
+.my-card.light {
+    border: 3px solid #000000;
+    background-color: #e5e5e5;
+}
+
+.my-card.dark {
+    border: 3px solid white;
+    background-color: #6e6e6e;
+}
+
+.my-card.light:hover {
+    border: 3px solid #0dff00;
+    background-color: black;
+    color: #0dff00;
+    transform: scale(1.1);
+
+}
+
+.my-card.dark:hover {
+    border: 3px solid #0dff00;
+    background-color: black;
+    color: #0dff00;
+    transform: scale(1.1);
+
+}
+
+.my-card-two {
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+
+    transition: 1s;
+}
+
+.my-card-two.light {
+    border: 3px solid #000000;
+    background-color: #e5e5e5;
+}
+
+.my-card-two.dark {
+    border: 3px solid white;
+    background-color: #6e6e6e;
+}
+
+.my-card-two.light:hover {
+    border: 3px solid #000000;
+    background-color: #0dff00;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.my-card-two.dark:hover {
+    border: 3px solid #0dff00;
+    background-color: #0dff00;
+    color: #000000;
+    transform: scale(1.1);
+
+}
+
+.card-icon {
+    text-align: start;
+    margin: 20px 0px 0px 20px;
+}
+
+.card-title {
+    text-align: start;
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+p.card-description {
+    text-align: start;
+    font-size: 1rem;
+    margin: 20px 0px 20px 20px;
+    padding: 0px;
+}
+
+.work-info {
+    padding: 5px 15px;
+}
