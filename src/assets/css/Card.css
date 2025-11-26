@@ -93,16 +93,43 @@ p.card-description {
     transition: none !important;
   }
 
-  .my-card.light:hover,
-  .my-card.dark:hover,
-  .my-card-two.light:hover,
-  .my-card-two.dark:hover,
-  .my-card:hover,
-  .my-card-two:hover {
+.my-card.light:hover,
+  .my-card.light:active,
+  .my-card.light:focus {
+    background-color: #e5e5e5 !important;
+    border-color: #000000 !important;
+    color: inherit !important;
     transform: none !important;
     box-shadow: none !important;
-    background-color: inherit !important;
+  }
+
+  .my-card.dark:hover,
+  .my-card.dark:active,
+  .my-card.dark:focus {
+    background-color: #6e6e6e !important;
+    border-color: white !important;
     color: inherit !important;
-    border-color: inherit !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .my-card-two.light:hover,
+  .my-card-two.light:active,
+  .my-card-two.light:focus {
+    background-color: #e5e5e5 !important;
+    border-color: #000000 !important;
+    color: inherit !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .my-card-two.dark:hover,
+  .my-card-two.dark:active,
+  .my-card-two.dark:focus {
+    background-color: #6e6e6e !important;
+    border-color: white !important;
+    color: inherit !important;
+    transform: none !important;
+    box-shadow: none !important;
   }
 }
