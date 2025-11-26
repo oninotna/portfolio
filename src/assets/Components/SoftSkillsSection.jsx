@@ -10,7 +10,7 @@ export default forwardRef (function SoftSkillsSection ({ scrollDown }, ref ) {
         <div ref={ref} className="soft-skills-section">
             <h3>Competenze Personali</h3>
             <div className="h-r mx-auto"></div>
-            <div className="card-container gap-5">
+            <div className="row card-container gap-5">
                 <Card 
                     icon={<ChevronsLeftRight size={52}/>} 
                     title='Codice Pulito'
