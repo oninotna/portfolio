@@ -31,7 +31,7 @@ export default function NavBar () {
                         aria-label="Toggle navigation">
                         <span className={`btn btn-outline-${theme === "light" ? "light" : "dark"}`}><Menu /></span>
                     </button>
-                    <div className="collapse navbar-collapse navbar-nav justify-content-center" id="navbar">
+                    <div className="collapse navbar-collapse navbar-nav " id="navbar">
                         <a 
                             className={`btn btn-outline-${theme === "light" ? "light" : "dark"}`}
                             href='https://www.linkedin.com/in/antonino-musarra-tubbi-ba0b25280'
