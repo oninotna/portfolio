@@ -1,0 +1,122 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  /* stato iniziale (prima dell'animazione) */
+}
+
+.modal-overlay.open {
+  animation: overlayIn 320ms ease forwards;
+}
+
+.modal-overlay.closing {
+  animation: overlayOut 320ms ease forwards;
+}
+
+.modal-content {
+  background: var(--background, #fff);
+  color: var(--text, #111);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: min(520px, calc(100% - 2rem));
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  position: relative;
+  transform-origin: center center;
+}
+
+.modal-content.open {
+  animation: modalIn 320ms cubic-bezier(.2,.9,.3,1) forwards;
+}
+
+.modal-content.closing {
+  animation: modalOut 320ms cubic-bezier(.2,.9,.3,1) forwards;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  text-align: center; /* centratura orizzontale */
+}
+
+.modal-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: var(--accent, #ff7a18);
+  stroke: currentColor;
+}
+
+.icon.gear {
+  animation: spin 2.6s linear infinite;
+}
+
+.icon.wrench {
+  animation: bob 1.6s ease-in-out infinite;
+}
+
+.icon.hammer {
+  animation: bounce 1.4s ease-in-out infinite;
+}
+
+.modal-body {
+  font-size: 1rem;
+  text-align: center; /* centratura orizzontale */
+}
+
+/* Animazioni icone */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  40% { transform: translateY(-8px) rotate(-8deg); }
+  60% { transform: translateY(-4px) rotate(4deg); }
+}
+
+/* Animazioni overlay / contenuto */
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes overlayOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes modalOut {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(-8px) scale(0.98); }
+}
