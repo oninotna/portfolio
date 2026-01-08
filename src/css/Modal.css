@@ -1,40 +1,12 @@
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 9999;
-  /* stato iniziale (prima dell'animazione) */
-}
+.modal-overlay{ position: fixed; inset: 0; display:flex; align-items:center; justify-content:center; background: rgba(2,6,23,0.45); z-index:9999; backdrop-filter: blur(4px) saturate(120%); }
 
-.modal-overlay.open {
-  animation: overlayIn 320ms ease forwards;
-}
+.modal-overlay.open{ animation: overlayIn 320ms ease forwards; }
+.modal-overlay.closing{ animation: overlayOut 320ms ease forwards; }
 
-.modal-overlay.closing {
-  animation: overlayOut 320ms ease forwards;
-}
+.modal-content{ background: var(--surface, #fff); color: var(--text, #111); padding:1.5rem; border-radius:12px; width:min(560px, calc(100% - 2rem)); box-shadow: 0 20px 60px rgba(2,6,23,0.45); position:relative; transform-origin:center center; border:1px solid rgba(255,255,255,0.04); backdrop-filter: blur(6px); }
 
-.modal-content {
-  background: var(--background, #fff);
-  color: var(--text, #111);
-  padding: 1.5rem;
-  border-radius: 8px;
-  width: min(520px, calc(100% - 2rem));
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-  position: relative;
-  transform-origin: center center;
-}
-
-.modal-content.open {
-  animation: modalIn 320ms cubic-bezier(.2,.9,.3,1) forwards;
-}
-
-.modal-content.closing {
-  animation: modalOut 320ms cubic-bezier(.2,.9,.3,1) forwards;
-}
+.modal-content.open{ animation: modalIn 320ms cubic-bezier(.2,.9,.3,1) forwards; }
+.modal-content.closing{ animation: modalOut 320ms cubic-bezier(.2,.9,.3,1) forwards; }
 
 .modal-close {
   position: absolute;

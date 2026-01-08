@@ -1,161 +1,3 @@
-/* @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-15px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-}
-
-
-.bounce {
-  display: inline-block;
-  animation: bounce 2s infinite;
-}
-
-.main-section {
-    height: 100vh;
-    width: 100vw;
-    padding-top: 80px;
-}
-
-.container-icon-main-section {
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    padding: 90px;
-    border-radius: 50%;
-    background-color: #e5e5e5;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-main-section {
-    font-size: 74px;
-    border-radius: 35%;
-}
-
-.info-main-section {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-main-section h1 {
-    text-align: center;
-    font-size: 68px;
-    margin: 0px;
-    padding: 20px 0px 20px 0px;
-}
-
-.info-main-section span.light {
-    color: #e5e5e5;
-    -webkit-text-stroke: 2px black;
-}
-
-.info-main-section span.dark {
-    color: #6e6e6e;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
-}
-
-.info-main-section h3 {
-    margin: 0px;
-    padding: 20px 0px 20px 0px;
-}
-
-.info-main-section p {
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    font-size: 1.1rem;
-    padding: 20px 0px 20px 0px;
-}
-
-.button-main-section {
-    padding: 20px 0px 20px 0px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-arrow-btn-container {
-    padding: 20px 0px 20px 0px;
-}
-
-.soft-skills-section {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.soft-skills-section h3 {
-    text-align: center;
-    margin: 0px;
-    padding: 20px 0px 20px 0px;
-}
-
-.h-r {
-    height: 8px;
-    width: 100px;
-    background-color: #0dff00;
-    border-radius: 10px;
-    margin-bottom: 22px;
-}
-
-.card-container {
-    padding-bottom: 20px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.tech-skills-section {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.tech-skills-section p{
-    padding: 0px 0px 20px 0px;
-}
-
-.badge {
-    background-color: white;
-    color: black;
-    padding: 5px 10px;
-    font-size: 1rem;
-}
-
-.experience-section {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.experience-section h3 {
-    text-align: center;
-    margin: 0px;
-    padding: 20px 0px 20px 0px;
-} */
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -181,72 +23,40 @@
     box-sizing: border-box;
 }
 
-.container-icon-main-section {
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    padding: 90px;
+.container-icon-main-section{
+    margin: 0 auto 16px;
+    width: 130px;
+    height: 130px;
+    padding: 26px;
     border-radius: 50%;
-    background-color: #e5e5e5;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(0,0,0,0.02));
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--shadow);
 }
 
-.icon-main-section {
-    font-size: 74px;
-    border-radius: 35%;
-}
+.icon-main-section{ font-size: 52px; }
 
-.info-main-section {
-    min-height: 100vh;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+.info-main-section{ min-height: 100vh; width: 100%; padding: 36px 20px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
 
-.info-main-section h1 {
-    text-align: center;
-    font-size: 68px;
-    margin: 0px;
-    padding: 20px 0px;
-}
+.info-main-section h1{ text-align: center; font-size: clamp(34px, 6vw, 68px); color: var(--text); margin: 0; padding: 6px 0; }
 
-.info-main-section span.light {
-    color: #e5e5e5;
-    -webkit-text-stroke: 2px black;
-}
+/* Theme aware highlight */
+.info-main-section span.light, .info-main-section span.dark{ color: var(--accent); text-shadow: 0 6px 24px rgba(14,165,233,0.08); }
 
-.info-main-section span.dark {
-    color: #6e6e6e;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
-}
+.info-main-section h3{ margin: 0; padding: 6px 0; color: var(--muted); }
 
-.info-main-section h3 {
-    margin: 0px;
-    padding: 20px 0px;
-}
+.info-main-section p{ text-align: center; margin: 0 auto; width: min(820px, 90%); font-size: 1.05rem; padding: 6px 0; color: var(--muted); }
 
-.info-main-section p {
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    font-size: 1.1rem;
-    padding: 20px 0px;
-}
+.button-main-section{ padding: 12px 0; display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
 
-.button-main-section {
-    padding: 20px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+.button-main-section .btn{ border-radius:999px; padding:10px 18px; background: transparent; border: 1px solid rgba(14,165,233,0.08); color: var(--text); box-shadow: 0 6px 18px rgba(2,6,23,0.04); }
+
+.button-main-section .btn:hover{ box-shadow: 0 14px 40px rgba(14,165,233,0.08); }
+
+.my-arrow-btn{ border-radius: 999px; padding: 10px; box-shadow: none; }
+
 
 .my-arrow-btn-container {
     padding: 20px 0px;
@@ -335,6 +145,23 @@
     padding: 20px 0px;
 }
 
+.projects-section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-section h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
 /* Media queries per mobile */
 @media (max-width: 768px) {
     .info-main-section h1 {
@@ -367,6 +194,7 @@
     
     .button-main-section {
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     

@@ -2,7 +2,7 @@ import { useThemeContext } from "../Contexts/ThemeContext";
 import { ArrowDown } from 'lucide-react';
 
 
-export default function InfoSection ({ scrollDown }) {
+export default function InfoSection ({ scrollDown, goToProjects }) {
     const { theme } = useThemeContext();
 
     return (
@@ -21,7 +21,12 @@ export default function InfoSection ({ scrollDown }) {
             </p>
             <div className="button-main-section gap-3">
                 <button className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}>Contattami</button>
-                <button className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}>I miei progetti</button> 
+                <button
+                    className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}
+                    onClick={() => goToProjects && goToProjects()}
+                >
+                    I miei progetti
+                </button>
             </div> 
             <div className="my-arrow-btn-container">
                 <button 

@@ -1,39 +1,67 @@
-/* body {
-  box-sizing: border-box;
-  border: 0;
-  padding: 0;
+/* Design tokens and base styles */
+:root{
+  --font-sans: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --radius: 12px;
+  --container-max: 1200px;
+  --transition: 200ms ease;
 }
 
-body.light {
-  background-color: white;
-  color: rgb(0, 0, 0);
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
-body.dark {
-  background-color: rgb(0, 0, 0);
-  color: white;
-} */
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
+body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  background: var(--background);
+  color: var(--text);
+  transition: background var(--transition), color var(--transition);
 }
 
-body.light {
-  background-color: white;
-  color: rgb(0, 0, 0);
+/* Light theme */
+body.light{
+  --background: linear-gradient(180deg, #f7fbfd 0%, #eef6fb 100%);
+  --surface: #ffffff;
+  --card-bg: rgba(255,255,255,0.6);
+  --text: #0f172a;
+  --muted: #6b7280;
+  --accent: #0ea5e9;
+  --accent-2: #7c3aed;
+  --shadow: 0 8px 30px rgba(2,6,23,0.06);
+  --glass: rgba(255,255,255,0.6);
 }
 
-body.dark {
-  background-color: rgb(0, 0, 0);
-  color: white;
+/* Dark theme */
+body.dark{
+  --background: radial-gradient(circle at 10% 10%, #071021 0%, #020617 50%);
+  --surface: rgba(10,12,16,0.7);
+  --card-bg: rgba(18,22,28,0.6);
+  --text: #e6eef8;
+  --muted: #9aa4b2;
+  --accent: #38bdf8;
+  --accent-2: #8b5cf6;
+  --shadow: 0 12px 50px rgba(2,6,23,0.6);
+  --glass: rgba(255,255,255,0.04);
 }
+
+/* Utilities */
+.container{ max-width: var(--container-max); margin: 0 auto; }
+.btn{ border-radius: 999px; padding: 8px 14px; cursor: pointer; font-weight: 600; transition: transform 160ms ease, box-shadow 160ms ease; }
+.btn:hover{ transform: translateY(-2px); }
+
+/* Improve specific outline buttons used in components */
+.btn.btn-outline-light{ background: rgba(255,255,255,0.04); color: var(--text); border: 1px solid rgba(255,255,255,0.08); }
+.btn.btn-outline-dark{ background: rgba(0,0,0,0.04); color: var(--text); border: 1px solid rgba(0,0,0,0.08); }
+
+/* Focus accessibility */
+:focus{ outline: 3px solid transparent; box-shadow: 0 0 0 3px rgba(14,165,233,0.12); }
+
+h1,h2,h3{ margin: 0; }
+img, svg{ display: block; max-width: 100%; }
+
+/* Small helpers */
+.text-muted{ color: var(--muted); }

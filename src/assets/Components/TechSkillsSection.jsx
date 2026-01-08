@@ -57,7 +57,7 @@ export default forwardRef (function TechSkillsSection ( { scrollDown }, ref ) {
                 >
                         <ArrowDown />
                 </button>
-            </div>
+                </div>
         </div>
     )
 })
