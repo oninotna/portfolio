@@ -20,7 +20,7 @@ export default function NavBar () {
         <nav ref={myNavRef} className="my-nav navbar navbar-expand-md px-4 py-2">
                 
                 <div className="container-fluid">
-                    <h1 className='fs-4 fst-italic'>Antonino Musarra Tubbi</h1>
+                    <h1 className='fs-5 fst-italic'>Antonino Musarra Tubbi</h1>
                     <button 
                         className="navbar-toggler m-2" 
                         type="button" 
