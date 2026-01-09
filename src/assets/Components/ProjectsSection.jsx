@@ -10,7 +10,7 @@ const projectsData = [
         un sito che fondamentalmente ci permette di ricevere una lista di prodotti (in questo caso bici) e 
         poter controllare nel dettaglio ogni singola unità, possibilità di confrontare le unità tra di loro e 
         infine creare una wishlist permanente grazie all'utilizzo di local storage.`,
-        img: "public/img/Macbook-Pro-16-2110x1286.png",
+        img: "/img/Macbook-Pro-16-2110x1286.png",
         url: "https://oninotna-bike-showroom.netlify.app"
     }]
 
