@@ -1,0 +1,26 @@
+.img-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+.img-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.my-img-project {
+  cursor: pointer;
+}
+
+.p-img-project {
+    position:absolute;
+    top: 30px;
+    color: white;
+}
