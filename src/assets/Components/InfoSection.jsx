@@ -16,7 +16,14 @@ export default function InfoSection ({ scrollDown, goToProjects }) {
             <h3>{t('info.title')}</h3>
             <p>{t('info.bio')}</p>
             <div className="button-main-section gap-3">
-                <button className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}>{t('info.contact')}</button>
+                <a
+                    className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}
+                    href={`mailto:antoninomusarratubbi@gmail.com?subject=${encodeURIComponent(t('info.emailSubject'))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {t('info.contact')}
+                </a>
                 <button
                     className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}
                     onClick={() => goToProjects && goToProjects()}
