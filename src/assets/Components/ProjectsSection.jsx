@@ -12,7 +12,20 @@ const projectsData = [
         infine creare una wishlist permanente grazie all'utilizzo di local storage.`,
         img: "/img/Macbook-Pro-16-2110x1286.png",
         url: "https://oninotna-bike-showroom.netlify.app"
-    }]
+    },
+    {
+        title: "ZneakDrop",
+        description: `Progetto di gruppo ispirato al funzionamento di un e-commerce 
+        completo, realizzato dal database (mySQL), passando per il back-end (node.js, 
+        express.js) fino ad arrivare al front-end (React.js). Mi sono occupato principalmente 
+        della parte front-end implementando tutta la logica di funzionamento, per poi 
+        subentrare anche nel back-end implementando le rotte parametriche per la ricerca di 
+        particolari prodotti. Ho anche coordinato il team e supervisionato le modifiche 
+        evitando eventuali bug.`,
+        img: "/img/Macbook-Pro-16-2110x1285.99609375 (2).png",
+        url: "https://zneak-drop.netlify.app"
+    }
+]
 
 export default forwardRef (function ProjectsSection ( { scrollDown }, ref ) {
     const { theme } = useThemeContext();
