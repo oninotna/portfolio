@@ -2,7 +2,7 @@ import { useThemeContext } from "../Contexts/ThemeContext";
 import { useState } from "react";
 import "../css/ProjectsCard.css";
 
-export default function ProjectsCard ({ title, description, img, url }) {
+export default function ProjectsCard ({ id, title, description, img, url }) {
     const { theme } = useThemeContext();
     const [imgModal, setImgModal] = useState(false);
 
@@ -21,7 +21,7 @@ export default function ProjectsCard ({ title, description, img, url }) {
             <div className="card-btns d-flex justify-content-center gap-3">
                 <button 
                     className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}
-                    data-bs-toggle="modal" data-bs-target="#Modal"
+                    data-bs-toggle="modal" data-bs-target={`#Modal${id}`}
                 >
                     Descrizione
                 </button>
@@ -29,7 +29,7 @@ export default function ProjectsCard ({ title, description, img, url }) {
             </div>
             
         </div>
-        <div className="modal fade" id="Modal" tabIndex="-1" aria-labelledby="ModalLabel">
+        <div className="modal fade" id={`Modal${id}`} tabIndex="-1" aria-labelledby="ModalLabel">
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
                   <button type="button" className="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>

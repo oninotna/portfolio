@@ -5,8 +5,9 @@ import ProjectsCard from "../LayoutComponents/ProjectsCard.jsx";
 
 const projectsData = [
     {
+        id: 1,
         title: "BikeShowRoom",
-        description: `Progetto realizzato, per l'esame finale della specializzazione in react del corso di Boolean, 
+        description: `Progetto realizzato per l'esame finale della specializzazione in react del corso di Boolean, 
         un sito che fondamentalmente ci permette di ricevere una lista di prodotti (in questo caso bici) e 
         poter controllare nel dettaglio ogni singola unità, possibilità di confrontare le unità tra di loro e 
         infine creare una wishlist permanente grazie all'utilizzo di local storage.`,
@@ -14,6 +15,7 @@ const projectsData = [
         url: "https://oninotna-bike-showroom.netlify.app"
     },
     {
+        id: 2,
         title: "ZneakDrop",
         description: `Progetto di gruppo ispirato al funzionamento di un e-commerce 
         completo, realizzato dal database (mySQL), passando per il back-end (node.js, 
@@ -35,9 +37,10 @@ export default forwardRef (function ProjectsSection ( { scrollDown }, ref ) {
             <h3>Progetti</h3>
             <div className="h-r mx-auto"></div>
             <div className="row card-container gap-5">
-                {projectsData.map((project, index) => (
+                {projectsData.map(project => (
                     <ProjectsCard 
-                        key={index}
+                        key={project.id}
+                        id={project.id}
                         title={project.title}
                         description={project.description}
                         img={project.img}
