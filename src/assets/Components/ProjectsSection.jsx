@@ -2,39 +2,39 @@ import { forwardRef } from "react";
 import { ArrowDown } from 'lucide-react';
 import { useThemeContext } from "../Contexts/ThemeContext";
 import ProjectsCard from "../LayoutComponents/ProjectsCard.jsx";
+import { useTranslation } from 'react-i18next';
 
 const projectsData = [
     {
         id: 1,
         title: "BikeShowRoom",
-        description: `Progetto realizzato per l'esame finale della specializzazione in react del corso di Boolean, 
-        un sito che fondamentalmente ci permette di ricevere una lista di prodotti (in questo caso bici) e 
-        poter controllare nel dettaglio ogni singola unità, possibilità di confrontare le unità tra di loro e 
-        infine creare una wishlist permanente grazie all'utilizzo di local storage.`,
+        descriptionKey: "projects.items.1.description",
         img: "/img/Macbook-Pro-16-2110x1286.png",
         url: "https://oninotna-bike-showroom.netlify.app"
     },
     {
         id: 2,
         title: "ZneakDrop",
-        description: `Progetto di gruppo ispirato al funzionamento di un e-commerce 
-        completo, realizzato dal database (mySQL), passando per il back-end (node.js, 
-        express.js) fino ad arrivare al front-end (React.js). Mi sono occupato principalmente 
-        della parte front-end implementando tutta la logica di funzionamento, per poi 
-        subentrare anche nel back-end implementando le rotte parametriche per la ricerca di 
-        particolari prodotti. Ho anche coordinato il team e supervisionato le modifiche 
-        evitando eventuali bug.`,
+        descriptionKey: "projects.items.2.description",
         img: "/img/Macbook-Pro-16-2110x1285.99609375 (2).png",
         url: "https://zneak-drop.netlify.app"
+    },
+    {
+        id: 3,
+        title: "BooRoad",
+        descriptionKey: "projects.items.3.description",
+        img: "/img/Macbook-Pro-16-2110x1285.9896240234375.png",
+        url: "https://Booroad-oninotna.netlify.app"
     }
 ]
 
 export default forwardRef (function ProjectsSection ( { scrollDown }, ref ) {
     const { theme } = useThemeContext();
+    const { t } = useTranslation();
 
     return (
         <div ref={ref} className="projects-section">
-            <h3>Progetti</h3>
+            <h3>{t('projects.title')}</h3>
             <div className="h-r mx-auto"></div>
             <div className="row card-container gap-5">
                 {projectsData.map(project => (
@@ -42,7 +42,7 @@ export default forwardRef (function ProjectsSection ( { scrollDown }, ref ) {
                         key={project.id}
                         id={project.id}
                         title={project.title}
-                        description={project.description}
+                        description={t(project.descriptionKey)}
                         img={project.img}
                         url={project.url}
                     />

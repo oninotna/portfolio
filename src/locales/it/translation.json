@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "scrollUp": "Torna su",
+    "languageLabel": "Lingua",
+    "languages": {
+      "it": "Italiano",
+      "es": "Español",
+      "en": "English"
+    }
+  },
+  "main": {
+    "greeting": "Ciao"
+  },
+  "info": {
+    "greeting": "Ciao, sono",
+    "title": "Sviluppatore Front-End Junior",
+    "bio": "Sviluppatore web junior, con una forte propensione per il front-end e una solida base anche nel back-end. Appassionato di tecnologie moderne e di creazione di interfacce utente intuitive e performanti. Mi piace lavorare in team, condividere idee e contribuire attivamente alla crescita del progetto e del gruppo di lavoro.",
+    "contact": "Contattami",
+    "projects": "I miei progetti"
+  },
+  "soft": {
+    "title": "Competenze Personali",
+    "cards": {
+      "1": { "title": "Codice Pulito", "description": "Molto attento ai dettagli e amante dell'ordine, capace di gestire le attività in modo strutturato ed efficiente per garantire massima mantenibilità del codice." },
+      "2": { "title": "Design Attento", "description": "Curo con attenzione ogni dettaglio dell’interfaccia per offrire esperienze digitali memorabili, unendo estetica e funzionalità." },
+      "3": { "title": "Team Working", "description": "Collaborativo e propositivo nei lavori di gruppo, con attitudine alla comunicazione e all'ascolto attivo, orientato al raggiungimento degli obiettivi." }
+    }
+  },
+  "tech": {
+    "title": "Competenze Tecniche",
+    "description": "Le tecnologie che utilizzo quotidianamente"
+  },
+  "experience": {
+    "title": "Esperienze Lavorative",
+    "jobs": {
+      "1": { "title": "Capo Cantiere", "company": "Musarra Tubbi Giuseppe - AGRI.EDILSCAVI S.R.L.S.", "dates": "06/2019 - 02/2025", "description": "Gestione e coordinamento dei lavori nei cantieri; supervisione del personale e monitoraggio delle tempistiche operative." },
+      "2": { "title": "Manutentore Hardware", "company": "Computers Parts S.R.L.", "dates": "07/2015 - 05/2019", "description": "Capo reparto Office Printer; manutenzione hardware (stampanti, fotocopiatrici, scanner, notebook, PC); assistenza tecnica in loco e online; gestione inventario e supporto logistico." }
+    }
+  },
+  "project": {
+    "clickToEnlarge": "Clicca per ingrandire",
+    "description": "Descrizione",
+    "visitSite": "Vai al sito",
+    "clickToClose": "Clicca sull'immagine per chiuderla",
+    "modalClose": "Chiudi"
+  },
+  "projects": {
+    "title": "Progetti",
+    "items": {
+      "1": { "description": "Progetto realizzato per l'esame finale della specializzazione in React del corso di Boolean: consente di visualizzare una lista di prodotti (bici), vedere i dettagli, confrontare le unità e creare una wishlist permanente con localStorage." },
+      "2": { "description": "Progetto di gruppo ispirato al funzionamento di un e-commerce completo, realizzato dal database (MySQL) al back-end (Node.js/Express) fino al front-end (React). Mi sono occupato principalmente del front-end e della coordinazione del team." },
+      "3": { "description": "Progetto di gruppo incentrato sullo sviluppo della parte front-end (React) per un'agenzia di viaggi. L'app gestisce viaggi programmati, permette di aggiungerne e mostrare dettagli e partecipanti. Senza back-end i dati non sono persistenti (si può aggiungere localStorage)." }
+    }
+  }
+} 

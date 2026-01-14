@@ -1,17 +1,19 @@
 import { forwardRef } from "react";
 import { ArrowDown } from 'lucide-react';
 import { useThemeContext } from "../Contexts/ThemeContext";
+import { useTranslation } from 'react-i18next';
 
 import Card from "../LayoutComponents/Card";
 
 export default forwardRef (function TechSkillsSection ( { scrollDown }, ref ) {
     const { theme } = useThemeContext();
+    const { t } = useTranslation();
 
     return (
         <div ref={ref} className="tech-skills-section">
-            <h3>Competenze Tecniche</h3>
+            <h3>{t('tech.title')}</h3>
             <div className="h-r mx-auto"></div>
-                <p>Le tecnologie che utilizzo quotidianamente</p>
+                <p>{t('tech.description')}</p>
                 <div className="card-container gap-5">
                     <Card 
                         title='Front-End' 

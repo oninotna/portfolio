@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "scrollUp": "Subir",
+    "languageLabel": "Idioma",
+    "languages": {
+      "it": "Italiano",
+      "es": "Español",
+      "en": "English"
+    }
+  },
+  "main": {
+    "greeting": "Hola"
+  },
+  "info": {
+    "greeting": "Hola, soy",
+    "title": "Desarrollador Front-End Junior",
+    "bio": "Desarrollador web junior con un fuerte enfoque en el front-end y una base sólida también en el back-end. Apasionado por las tecnologías modernas y por crear interfaces de usuario intuitivas y de alto rendimiento. Me gusta trabajar en equipo, compartir ideas y contribuir activamente al crecimiento del proyecto y del equipo.",
+    "contact": "Contáctame",
+    "projects": "Mis proyectos"
+  },
+  "soft": {
+    "title": "Habilidades Blandas",
+    "cards": {
+      "1": { "title": "Código Limpio", "description": "Orientado al detalle y organizado; capaz de gestionar tareas de forma estructurada y eficiente para garantizar código mantenible." },
+      "2": { "title": "Diseño Cuidadoso", "description": "Presto atención a los detalles de la interfaz para ofrecer experiencias digitales memorables, combinando estética y funcionalidad." },
+      "3": { "title": "Trabajo en Equipo", "description": "Colaborador y proactivo en trabajos grupales, con habilidades comunicativas y de coordinación para alcanzar objetivos comunes." }
+    }
+  },
+  "tech": {
+    "title": "Habilidades Técnicas",
+    "description": "Tecnologías que utilizo diariamente"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "jobs": {
+      "1": { "title": "Jefe de Obra", "company": "Musarra Tubbi Giuseppe - AGRI.EDILSCAVI S.R.L.S.", "dates": "06/2019 - 02/2025", "description": "Gestión y coordinación de trabajos en obra; supervisión del personal y seguimiento de tiempos operativos." },
+      "2": { "title": "Técnico de Hardware", "company": "Computers Parts S.R.L.", "dates": "07/2015 - 05/2019", "description": "Responsable de oficina de impresoras; mantenimiento de hardware (impresoras, fotocopiadoras, escáneres, notebooks, PC); asistencia técnica en sitio y online; gestión de inventario y soporte logístico." }
+    }
+  },
+  "project": {
+    "clickToEnlarge": "Haz clic para ampliar",
+    "description": "Descripción",
+    "visitSite": "Ir al sitio",
+    "clickToClose": "Haz clic en la imagen para cerrarla",
+    "modalClose": "Cerrar"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": {
+      "1": { "description": "Proyecto realizado para el examen final de la especialización en React del curso de Boolean: permite ver una lista de productos (bicicletas), inspeccionar detalles, comparar elementos y crear una lista de deseos persistente usando localStorage." },
+      "2": { "description": "Proyecto de grupo inspirado en el funcionamiento de un e-commerce completo, desarrollado desde la base de datos (MySQL), pasando por el back-end (Node.js/Express) hasta el front-end (React). Me encargué principalmente del front-end y de la coordinación del equipo." },
+      "3": { "description": "Proyecto de grupo centrado en el desarrollo front-end (React) para una agencia de viajes. La app gestiona viajes programados, permite añadir nuevos y mostrar detalles y participantes. Sin back-end los datos no son persistentes (se puede añadir localStorage)." }
+    }
+  }
+} 

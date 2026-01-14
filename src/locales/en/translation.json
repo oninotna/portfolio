@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "scrollUp": "Scroll to top",
+    "languageLabel": "Language",
+    "languages": {
+      "it": "Italiano",
+      "es": "Español",
+      "en": "English"
+    }
+  },
+  "main": {
+    "greeting": "Hello"
+  },
+  "info": {
+    "greeting": "Hi, I'm",
+    "title": "Junior Front-End Developer",
+    "bio": "Junior web developer with a strong focus on front-end and a solid foundation in back-end. Passionate about modern technologies and building intuitive, high-performance user interfaces. I enjoy working in teams, sharing ideas, and contributing actively to project and team growth.",
+    "contact": "Contact me",
+    "projects": "My projects"
+  },
+  "soft": {
+    "title": "Soft Skills",
+    "cards": {
+      "1": { "title": "Clean Code", "description": "Detail-oriented and organized; able to manage tasks in a structured and efficient way to ensure maintainable code." },
+      "2": { "title": "Thoughtful Design", "description": "I pay attention to UI details to deliver memorable digital experiences, balancing aesthetics and functionality to create intuitive paths." },
+      "3": { "title": "Team Working", "description": "Collaborative and proactive in group work, with strong communication and coordination skills to help reach common goals." }
+    }
+  },
+  "tech": {
+    "title": "Technical Skills",
+    "description": "Technologies I use daily"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "jobs": {
+      "1": { "title": "Site Manager", "company": "Musarra Tubbi Giuseppe - AGRI.EDILSCAVI S.R.L.S.", "dates": "06/2019 - 02/2025", "description": "Management and coordination of construction activities, supervision of staff and monitoring of schedules." },
+      "2": { "title": "Hardware Technician", "company": "Computers Parts S.R.L.", "dates": "07/2015 - 05/2019", "description": "Office printer lead; hardware maintenance (printers, copiers, scanners, notebooks, desktops); shipping department operator and on-site/online technical assistance for warranty products; inventory management and logistics support." }
+    }
+  },
+  "project": {
+    "clickToEnlarge": "Click to enlarge",
+    "description": "Description",
+    "visitSite": "Visit site",
+    "clickToClose": "Click the image to close",
+    "modalClose": "Close"
+  },
+  "projects": {
+    "title": "Projects",
+    "items": {
+      "1": { "description": "Project made for the final exam of the React specialization at Boolean. The site allows viewing a list of products (bikes), inspect details, compare items, and create a persistent wishlist using localStorage." },
+      "2": { "description": "Group project inspired by a complete e-commerce, built from the database (MySQL) through the back-end (Node.js/Express) to the front-end (React). I mainly worked on the front-end implementation and also contributed to back-end parametric routes and team coordination." },
+      "3": { "description": "Group project focused on front-end development (React) for a travel agency. The app manages scheduled trips, allows adding new ones and shows details and participants. Note: without a backend, entered data isn't persistent (localStorage can be added)." }
+    }
+  }
+} 

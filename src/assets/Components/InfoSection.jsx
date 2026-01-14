@@ -1,31 +1,27 @@
 import { useThemeContext } from "../Contexts/ThemeContext";
 import { ArrowDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 
 export default function InfoSection ({ scrollDown, goToProjects }) {
     const { theme } = useThemeContext();
+    const { t } = useTranslation();
 
     return (
         <div className="info-main-section">
             <div className="container-icon-main-section">
                 <span className="icon-main-section">👨🏻‍💻</span>
             </div>
-            <h1>Ciao, sono <span className={theme}>Antonino</span> 😃</h1>
-            <h3>Junior Front-End Developer</h3>
-            <p>
-                Sviluppatore web junior, 
-                con una forte propensione per il front-end e una solida base anche nel back-end. 
-                Appassionato di tecnologie moderne e di creazione di interfacce utente intuitive e performanti. 
-                Mi piace lavorare in team, condividere idee e contribuire attivamente alla crescita del progetto 
-                e del gruppo di lavoro.
-            </p>
+            <h1>{t('info.greeting')} <span className={theme}>Antonino</span> 😃</h1>
+            <h3>{t('info.title')}</h3>
+            <p>{t('info.bio')}</p>
             <div className="button-main-section gap-3">
-                <button className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}>Contattami</button>
+                <button className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}>{t('info.contact')}</button>
                 <button
                     className={`btn btn-outline-${theme === "light" ? "dark" : "light"}`}
                     onClick={() => goToProjects && goToProjects()}
                 >
-                    I miei progetti
+                    {t('info.projects')}
                 </button>
             </div> 
             <div className="my-arrow-btn-container">

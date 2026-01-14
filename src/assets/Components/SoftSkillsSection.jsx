@@ -2,42 +2,31 @@ import { forwardRef } from "react";
 import { useThemeContext } from "../Contexts/ThemeContext";
 import Card from "../LayoutComponents/Card";
 import { ChevronsLeftRight, Users, Palette, ArrowDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default forwardRef (function SoftSkillsSection ({ scrollDown }, ref ) {
     const { theme } = useThemeContext();
+    const { t } = useTranslation();
 
     return (
         <div ref={ref} className="soft-skills-section">
-            <h3>Competenze Personali</h3>
+            <h3>{t('soft.title')}</h3>
             <div className="h-r mx-auto"></div>
             <div className="row card-container gap-5">
                 <Card 
                     icon={<ChevronsLeftRight size={52}/>} 
-                    title='Codice Pulito'
-                    description={
-                        `Molto attento ai dettagli e amante dell'ordine, 
-                        capace di gestire le attività in modo strutturato ed efficiente 
-                        per garantire massima mantenibilità all'interno del codice`
-                    }
+                    title={t('soft.cards.1.title')}
+                    description={t('soft.cards.1.description')}
                 />
                 <Card 
                     icon={<Palette size={52}/>} 
-                    title='Design Attento'
-                    description={
-                        `Curo con attenzione ogni dettaglio dell’interfaccia utente per offrire esperienze
-                         digitali memorabili. Unisco estetica e funzionalità per creare percorsi intuitivi, 
-                         piacevoli e coerenti, capaci di coinvolgere l’utente e valorizzare al massimo l’identità del prodotto o del brand`
-                    }
+                    title={t('soft.cards.2.title')}
+                    description={t('soft.cards.2.description')}
                 />
                 <Card 
                     icon={<Users size={52}/>} 
-                    title='Team Working'
-                    description={
-                        `Collaborativo e propositivo nei lavori di gruppo, 
-                        con una naturale attitudine alla comunicazione e all’ascolto attivo. 
-                        So coordinare e motivare il team, favorendo la cooperazione e il raggiungimento 
-                        degli obiettivi comuni con un approccio organizzato, empatico e orientato ai risultati`
-                    }
+                    title={t('soft.cards.3.title')}
+                    description={t('soft.cards.3.description')}
                 />
             </div>
             <div className="my-arrow-btn-container">
